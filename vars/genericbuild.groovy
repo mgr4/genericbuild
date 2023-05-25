@@ -2,7 +2,7 @@ def call(Map config=[:]){
 node {
     stage('SCM') {
 	echo 'Gathering code from version control'
-        git branch: '${branch}', url: 'https://github.com/suvsap/JenkinsGroovy.git'
+        git branch: '${branch}', url: 'https://github.com/mgr4/JenkinsGroovy.git'
     }
     stage('Build') {
        try{
